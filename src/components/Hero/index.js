@@ -29,6 +29,7 @@ const Hero = () => {
         p="4"
         borderRadius="lg"
         boxShadow="md"
+        bg= 'gray.800'
       >
         <Text>Loading...</Text>
       </Flex>
