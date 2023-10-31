@@ -30,6 +30,7 @@ const Hero = () => {
           flexDirection={'column'}
           gap={'6px'}
           mt={'16px'}
+          color={'gray.200'}
         >
           <Text fontSize="xl" fontWeight="medium" color={'gray.100'}>
             Name - {hero?.name}

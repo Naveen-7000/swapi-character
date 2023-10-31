@@ -16,6 +16,7 @@ const FavoriteButton = () => {
         border="2px"
         borderColor={'whiteAlpha.600'}
         borderRadius="6px"
+        color={"whiteAlpha.800"}
         onClick={handleFavorite}
         icon={<FaHeart />}
       />
