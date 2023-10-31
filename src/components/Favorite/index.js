@@ -1,9 +1,8 @@
 import React from 'react';
-import { useColorModeValue, IconButton, Box, Text } from '@chakra-ui/react';
+import { IconButton, Box, Text } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
 
 const FavoriteButton = () => {
-  const colorMode = useColorModeValue('dark', 'light');
   const handleFavorite = () => {};
   return (
     <Box position="relative">
@@ -15,7 +14,7 @@ const FavoriteButton = () => {
         variant="ghost"
         marginLeft="2"
         border="2px"
-        borderColor={colorMode === 'dark' ? 'blackAlpha.800' : 'whiteAlpha.600'}
+        borderColor={'whiteAlpha.600'}
         borderRadius="6px"
         onClick={handleFavorite}
         icon={<FaHeart />}
