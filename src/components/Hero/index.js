@@ -14,27 +14,12 @@ const Hero = () => {
     );
     return response.data;
   };
-  const { data: hero, isLoading } = useQuery({
+  const { data: hero } = useQuery({
     queryKey: ['herodetails', params?.heroId],
     queryFn: getData,
   });
 
-  if (isLoading) {
-    return (
-      <Flex
-        align="center"
-        justifyContent="center"
-        flexDirection="column"
-        gap="5px"
-        p="4"
-        borderRadius="lg"
-        boxShadow="md"
-        bg= 'gray.800'
-      >
-        <Text>Loading...</Text>
-      </Flex>
-    );
-  }
+
   return (
     <Layout>
       <Box padding={'10px'} m={'16px'}>
