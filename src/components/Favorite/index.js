@@ -14,9 +14,10 @@ const FavoriteButton = () => {
         variant="ghost"
         marginLeft="2"
         border="2px"
-        borderColor={'whiteAlpha.600'}
+        borderColor={'whiteAlpha.500'}
         borderRadius="6px"
         color={"whiteAlpha.800"}
+        _hover={{bg:"whiteAlpha.200"}}
         onClick={handleFavorite}
         icon={<FaHeart />}
       />
