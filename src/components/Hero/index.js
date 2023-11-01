@@ -30,7 +30,7 @@ const Hero = () => {
     <Layout>
       <Box padding={'10px'} m={'16px'}>
         <Flex align={'center'} justifyContent={'space-between'}>
-          <Heading>Personal Information</Heading>
+          <Heading color={'gray.100'}>Personal Information</Heading>
           <Button onClick={handleAddFavorite}>
             {favoriteCharacters.some(favorite => favorite.id === params.heroId)
               ? 'Remove from Favorites'
@@ -82,6 +82,7 @@ const Hero = () => {
         m={'16px'}
         borderBottom={'1px'}
         borderColor={'white'}
+        color={'gray.100'}
       >
         Movies
       </Text>

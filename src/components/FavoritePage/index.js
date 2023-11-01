@@ -9,7 +9,7 @@ const FavoritePage = () => {
   return (
     <Layout>
     <Box padding={"16px"}>
-      <Heading>Favorite Characters</Heading>
+      <Heading color={'gray.100'}>Favorite Characters</Heading>
       <Grid
        templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)', 'repeat(4, 1fr)']}
        gap={6}

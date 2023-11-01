@@ -9,9 +9,8 @@ const Layout = ({ children }) => {
     },
     styles: {
       global: {
-        // Set the background color for the entire app
         body: {
-          bg: 'gray.800', // Replace with your desired background color
+          bg: 'gray.800',
         },
       },
     },
