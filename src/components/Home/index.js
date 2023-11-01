@@ -48,7 +48,7 @@ const Home = () => {
             <HeroCards
               key={index}
               name={hero?.name}
-              age={hero?.age}
+              img={lastPart}
               gender={hero?.gender}
               id={lastPart}
             />

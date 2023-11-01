@@ -1,7 +1,6 @@
 import React from 'react';
 import { Flex, Img, useColorModeValue } from '@chakra-ui/react';
 import FavoriteButton from '../Favorite';
-import logo from '../../Asset/star-wars-logo-983.png';
 
 const Navbar = () => {
   const colorMode = useColorModeValue('dark', 'light');
@@ -16,7 +15,7 @@ const Navbar = () => {
       color={colorMode === 'dark' ? 'black' : 'white'}
     >
       <Flex align="center">
-        <Img src={logo} w={'100px'} h={'50'} />
+        <Img src={'https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png?region=0,0,586,254'} w={'100px'} h={'50'} />
       </Flex>
       <Flex align="center" justifyContent="center">
         <FavoriteButton />

@@ -1,9 +1,14 @@
 import React from 'react';
 import { IconButton, Box, Text } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
-
+import { useNavigate } from 'react-router-dom';
+import useFavorites from '../../hooks/useFavorites';
 const FavoriteButton = () => {
-  const handleFavorite = () => {};
+  const navigate = useNavigate();
+  const {favoriteCharacters} = useFavorites()
+  const handleFavorite = () => {
+     navigate("/favorite");
+  };
   return (
     <Box position="relative">
       <IconButton
@@ -30,7 +35,7 @@ const FavoriteButton = () => {
         padding={'1px 5px'}
       >
         <Text fontSize={'12px'} fontWeight={'semibold'}>
-          5
+         {favoriteCharacters?.length}
         </Text>
       </Box>
     </Box>
